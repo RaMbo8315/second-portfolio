@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Quattrocento:400,700');
+@import "variables";
+@import "reset";
+@import "grid";
+@import "landing";
+@import "About";
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: white;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+  #app {
+    background: #668cff;
+    width: 98vw;
+    height: 95vh;
+    margin: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(102, 140, 255, 1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(102, 140, 255, 1);
+    box-shadow: inset 0px 0px 20px 0px rgb(0, 0, 0);
+
+    .fade-appear,
+    .fade-enter {
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .fade-appear-active,
+    .fade-enter.fade-enter-active {
+      opacity: 1;
+      transition: opacity 500ms linear 150ms;
+    }
+
+    .fade-exit {
+      opacity: 1;
+    }
+
+    .fade-exit.fade-exit-active {
+      opacity: 0;
+      transition: opacity 250ms linear;
+    }
+
+    .container {
+      padding: 10px;
+    }
+  }
+}
